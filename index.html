@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitrine Digital | Seu negócio online</title>
+<style>
+:root{--bg:#08090d;--card:#11131a;--text:#f5f7fb;--muted:#a9afbd;--accent:#6c5ce7;--accent2:#00d4ff;--line:#252938}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,9,13,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.15rem;font-weight:900;letter-spacing:.5px}.logo span{color:var(--accent2)}
+nav{display:flex;gap:24px;color:var(--muted);font-weight:600}nav a:hover{color:#fff}
+.hero{padding:110px 0 90px;text-align:center;background:radial-gradient(circle at 50% 0%,#20204b 0,transparent 48%)}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #34365a;border-radius:99px;color:#cbd0ff;background:#11132a;margin-bottom:20px;font-size:.9rem}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:1.03;max-width:900px;margin:auto;font-weight:900}
+.gradient{background:linear-gradient(90deg,#fff,var(--accent2),#a993ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:680px;margin:24px auto;color:var(--muted);font-size:1.12rem}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:14px 22px;border-radius:12px;background:var(--accent);font-weight:800;box-shadow:0 10px 30px #6c5ce733;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;border:1px solid var(--line);box-shadow:none}
+section{padding:85px 0}.section-title{text-align:center;margin-bottom:42px}.section-title h2{font-size:2.3rem}.section-title p{color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#12151e,#0d0f15);border:1px solid var(--line);padding:25px;border-radius:20px}
+.icon{font-size:2rem;margin-bottom:14px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem}
+.audience{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.pill{padding:18px;text-align:center;border:1px solid var(--line);border-radius:14px;background:#0e1016}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.price-card{padding:30px;border:1px solid var(--line);border-radius:22px;background:var(--card)}.featured{border-color:var(--accent);transform:translateY(-8px)}.price{font-size:2.2rem;font-weight:900;margin:15px 0}.price small{font-size:.9rem;color:var(--muted);font-weight:500}.price-card ul{list-style:none;color:var(--muted);margin:20px 0}.price-card li{margin:9px 0}.price-card li::before{content:"✓ ";color:#65e6b1;font-weight:900}
+.cta{margin:0 auto 80px;padding:65px 25px;text-align:center;border-radius:28px;background:linear-gradient(135deg,#17183b,#101a2a);border:1px solid #34375d}.cta h2{font-size:2.5rem}.cta p{color:var(--muted);max-width:600px;margin:10px auto}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center}
+@media(max-width:800px){.grid,.audience{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.featured{transform:none}nav{display:none}}
+@media(max-width:480px){.grid,.audience{grid-template-columns:1fr}.hero{padding-top:75px}h1{font-size:2.7rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <!-- ALTERE O NOME AQUI -->
+    <div class="logo">VITRINE<span>DIGITAL</span></div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#negocios">Para quem</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="badge">🚀 Presença digital para pequenos negócios</div>
+    <h1>Faça seu negócio <span class="gradient">ser encontrado.</span></h1>
+    <p>Criamos sites modernos e páginas profissionais para pequenos negócios mostrarem seus produtos, serviços e contatos na internet.</p>
+    <div class="buttons">
+      <a class="btn" href="#contato">Quero divulgar meu negócio</a>
+      <a class="btn alt" href="#servicos">Conhecer serviços</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+<div class="container">
+  <div class="section-title"><h2>O que fazemos</h2><p>Uma presença digital simples, bonita e útil.</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">🌐</div><h3>Sites profissionais</h3><p>Sites responsivos para apresentar sua empresa em qualquer celular ou computador.</p></div>
+    <div class="card"><div class="icon">📱</div><h3>WhatsApp</h3><p>Botões de contato para facilitar que seus clientes façam perguntas e pedidos.</p></div>
+    <div class="card"><div class="icon">📍</div><h3>Presença local</h3><p>Informações importantes como endereço, horário, serviços e formas de contato.</p></div>
+    <div class="card"><div class="icon">✨</div><h3>Design personalizado</h3><p>Visual adaptado à identidade e ao estilo de cada negócio.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="negocios">
+<div class="container">
+  <div class="section-title"><h2>Para quem é?</h2><p>Atendemos diferentes tipos de pequenos negócios.</p></div>
+  <div class="audience">
+    <div class="pill">🍔 Restaurantes</div><div class="pill">💈 Barbearias</div>
+    <div class="pill">🍰 Confeitarias</div><div class="pill">💅 Salões</div>
+    <div class="pill">🔧 Prestadores</div><div class="pill">🏋️ Academias</div>
+    <div class="pill">🛍️ Lojas</div><div class="pill">📸 Profissionais</div>
+  </div>
+</div>
+</section>
+
+<section id="planos">
+<div class="container">
+  <div class="section-title"><h2>Planos</h2><p>Exemplos de planos. Personalize os preços conforme seu serviço.</p></div>
+  <div class="pricing">
+    <div class="price-card"><h3>Essencial</h3><div class="price">R$ 149 <small>/ projeto</small></div><ul><li>Site de uma página</li><li>Informações do negócio</li><li>Botão para WhatsApp</li><li>Design responsivo</li></ul><a class="btn" href="#contato">Tenho interesse</a></div>
+    <div class="price-card featured"><h3>Profissional</h3><div class="price">R$ 249 <small>/ projeto</small></div><ul><li>Site completo</li><li>Catálogo de produtos/serviços</li><li>WhatsApp e localização</li><li>Design personalizado</li></ul><a class="btn" href="#contato">Tenho interesse</a></div>
+    <div class="price-card"><h3>Personalizado</h3><div class="price">Sob consulta</div><ul><li>Projeto sob medida</li><li>Funcionalidades extras</li><li>Personalização avançada</li><li>Suporte combinado</li></ul><a class="btn" href="#contato">Falar conosco</a></div>
+  </div>
+</div>
+</section>
+
+<section id="contato">
+<div class="container">
+  <div class="cta">
+    <h2>Seu negócio merece ser visto.</h2>
+    <p>Quer ter uma presença profissional na internet? Fale conosco e conte um pouco sobre sua empresa.</p>
+    <!-- TROQUE O NÚMERO PELO WHATSAPP DE VOCÊS -->
+    <a class="btn" href="https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20sites." target="_blank">💬 Falar pelo WhatsApp</a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Vitrine Digital · Sites para pequenos negócios</div>
+</footer>
+</body>
+</html>
